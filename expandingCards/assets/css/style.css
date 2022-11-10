@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', monospace;
+    overflow: hidden;
+}
+section{
+    display: flex;
+    gap: 15px;
+    width: 90vw;
+}
+.slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    flex: 0.5;
+    height: 80vh;
+    transition: 0.5s ease-in-out ;
+    border-radius: 50px;
+    display: flex;
+}
+.active{
+    flex: 5;
+
+}
+.slideTitle{
+    opacity: 0;
+    width: 30%;
+    font-size: 1rem;
+    align-self: flex-end;
+    margin:1rem;
+    padding: 0 5px 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    border-radius: 10px;
+    color: #000;
+    font-family: 'IM Fell DW Pica',monospace;
+}
+.slide.active h3 {
+    opacity: 1;
+    transition: .5s ease-in;
+}

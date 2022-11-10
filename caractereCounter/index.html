@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Contador de Caractere</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Contador de caracteres</h1>
+        <label for="limit">
+            Inserir um limite:
+            <input type="number" id="limit" placeholder="100" min="0">
+        </label>
+        <br>
+        <textarea name="msg" id="msg" placeholder="Escreva aqui..." onkeyup="writing(event)" maxlength=""></textarea>
+        <h2 class="info">0 caracteres 0 palavras</h2>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
